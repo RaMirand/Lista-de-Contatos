@@ -19,4 +19,6 @@ Criação de uma lista de contatos usando Python.
   
 - v1.2
   - Atualização do arquivo ".gitignore";
+  - Adicionada a função "pesquisar: que permite a pesquisa de um único contato a partir do nome;
+  - Adicionada a função "excluir_contato" que permite excluir um contato do arquivo .JSON a partir do nome;
 
