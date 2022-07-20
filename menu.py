@@ -13,6 +13,9 @@ while opcao == "I" or opcao == "P" or opcao == "E" or opcao == "V":
     elif opcao == "P":
         pesquisar()
 
+    elif opcao == "E":
+        excluir_contato()
+
     elif opcao == "V":
         exibir_contatos()
 

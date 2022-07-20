@@ -5,7 +5,7 @@ import json
 def menu_contatos():
 
     selecionar = input("Você acessou a lista de contatos dos Super-Heróis DC, selecione uma das opções:" "\n" + "<I> - Inserir novo contato" + "\n" +
-                       "<P> - Pesquisar um contato" + "\n" + "<E> - Excluir um contato" + "\n" + "<V> - Visualizar lista completa" + "\n" + "Opção Selecionada: ").upper()
+                       "<P> - Pesquisar um contato" + "\n" + "<E> - Excluir um contato" + "\n" + "<V> - Visualizar lista completa" + "\n" + "<S> - Sair" + "\n" + "Opção Selecionada: ").upper()
 
     return selecionar
 
@@ -26,8 +26,6 @@ def exibir_contatos():
                 print(email)
 
             print("\n")
-
-    arquivo.close()
 
 
 # Função para adicionar um novo contato no nosso arquivo .JSON. Ao final desta função o contato será salvo no arquivo.
@@ -61,3 +59,32 @@ def pesquisar():
 
         pesq_contato = input(
             "Informe o nome do contato que deseja pesquisar: ")
+
+        for contato, infos in contatos.items():
+            if contato == pesq_contato:
+                print("\n" + contato)
+                for celular, email in infos.items():
+                    print(celular)
+                    print(email)
+
+        print("\n")
+
+
+# Função responsável por excluir um contato no arquivo .JSON
+def excluir_contato():
+
+    with open("R:\\OneDrive\\FIAP - ANALISE E DESENVOLVIMENTO DE SISTEMAS\\3. MODELING\CODIGOS\\ListadeContatos_JSON\\listadecontatos.json", "r", encoding="UTF-8") as arquivo:
+
+        listaDeContatos = arquivo.read()
+        contatos = json.loads(listaDeContatos)
+
+        nome_contato = input("Informe o nome do contato a ser deletado: ")
+        if nome_contato != None:
+            del contatos[nome_contato]
+
+    arquivo = open("R:\\OneDrive\\FIAP - ANALISE E DESENVOLVIMENTO DE SISTEMAS\\3. MODELING\CODIGOS\\ListadeContatos_JSON\\listadecontatos.json", "w", encoding="UTF-8")
+    arquivo_final = json.dumps(contatos, indent=4)
+    arquivo.write(arquivo_final)
+    arquivo.close()
+
+    print("Contato excluído com sucesso.")
