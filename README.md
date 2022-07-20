@@ -2,6 +2,7 @@
 Criação de uma lista de contatos usando Python.
 
 <h1>Objetivo:</h1>
+
 - Estudar manipulação da estrutura de dicionários;
 - Manipulação e armazenamento de informações em arquivos .JSON;
 
