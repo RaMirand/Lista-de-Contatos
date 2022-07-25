@@ -1,0 +1,26 @@
+{
+    "Clark Kent": {
+        "Celular": "11985423674",
+        "Email": "clark@krypton.com"
+    },
+    "Bruce Wayne": {
+        "Celular": "11978965312",
+        "Email": "brucewayne@batcaverna.com"
+    },
+    "Lanterna Verde": {
+        "Celular": "11978945612",
+        "Email": "lanterna@verde.com"
+    },
+    "Mulher Maravilha": {
+        "Celular": "1112345678",
+        "Email": "mulher@maravilha.com"
+    },
+    "Dick Grayson": {
+        "Celular": "1178912345",
+        "Email": "nigthwing@batcaverna.com"
+    },
+    "Barry Allen": {
+        "Celular": "1178945612",
+        "Email": "flash@muitorapido.com"
+    }
+}
