@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 adicionarContatos.py
 exibirContatos.cpython-38.pyc
 functions.cpython-38.pyc
 
+=======
+>>>>>>> fb1805c54f28d41e851e7bdc328c12272bb2c070
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -130,4 +133,8 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
+<<<<<<< HEAD
 .pyre/
+=======
+.pyre/
+>>>>>>> fb1805c54f28d41e851e7bdc328c12272bb2c070
